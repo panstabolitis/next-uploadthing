@@ -1,0 +1,40 @@
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.page-wrapper {
+  height: 100svh;
+  width: 100vw;
+
+  display: grid;
+  place-items: center;
+}
+
+.upload-button {
+  background-color: blue;
+
+  cursor: pointer;
+  padding: 1rem;
+
+  display: grid;
+  place-items: center;
+  width: fit-content;
+}
+
+.upload-uploading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-success {
+  background-color: green;
+}
